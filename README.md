@@ -69,3 +69,22 @@ When declaring `long` and `float` variables in Java, there are syntax peculiarit
 - **Assignment**. After a variable is declared, it can be assigned a value: `myNumber = 5;`.
 
 - **Initialization**. Combines declaration and assignment into a single step: `int myNumber = 5;`.
+
+## Expressions, operands, operators
+
+In Java, expressions are constructs that evaluate to a single value. Expressions are made up of operands and operators:
+
+- **Operands** are the data or variables on which operations are performed.
+- **Operators** are symbols that perform operations on operands. Java supports various types of operators, including
+  arithmetic (`+`, `-`, `*`, `/`, `%`),
+  relational (`<`, `>`, `<=`, `>=`, `==`, `!=`),
+  logical (`&&`, `||`, `!`),
+  assignment (`=`, `+=`, `-=`, `*=`, `/=`, `%=`), and more.
+
+An expression combines operands and operators according to the syntax of Java to produce another value. For example, in the expression `int result = 10 + 5;`, `10` and `5` are operands, `+` is the operator, and `result` is assigned the value of the expression, which is `15`.
+
+In addition to the operators mentioned, Java also supports the **increment** (`++`) and **decrement** (`--`) operators, which are used to increase or decrease a variable's value by one, respectively. These operators can be used in two forms:
+
+- **Prefix**: When used before the variable (e.g., `++myNumber` or `--myNumber`), the operation is performed, and the value of the expression is the new value of the variable.
+
+- **Postfix**: When used after the variable (e.g., `myNumber++` or `myNumber--`), the original value of the variable is the value of the expression, and then the operation is performed.
