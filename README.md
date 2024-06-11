@@ -88,3 +88,15 @@ In addition to the operators mentioned, Java also supports the **increment** (`+
 - **Prefix**: When used before the variable (e.g., `++myNumber` or `--myNumber`), the operation is performed, and the value of the expression is the new value of the variable.
 
 - **Postfix**: When used after the variable (e.g., `myNumber++` or `myNumber--`), the original value of the variable is the value of the expression, and then the operation is performed.
+
+## Wrapper Classes
+
+In Java, wrapper classes provide a way to use primitive data types (`int`, `char`, `double`, etc.) as objects. Each primitive data type has a corresponding wrapper class:
+
+- `int` -> `Integer`
+- `char` -> `Character`
+- `double` -> `Double`
+- `boolean` -> `Boolean`
+- and so on for `byte`, `short`, `long`, `float`
+
+Wrapper classes are useful for working with collections, such as `ArrayList`, which can only store objects. They also offer utility methods for converting between types, parsing strings, and more. Autoboxing and unboxing automatically convert between primitive types and their corresponding wrapper classes, simplifying their use in Java code.## Wrapper Classes
