@@ -100,3 +100,11 @@ In Java, wrapper classes provide a way to use primitive data types (`int`, `char
 - and so on for `byte`, `short`, `long`, `float`
 
 Wrapper classes are useful for working with collections, such as `ArrayList`, which can only store objects. They also offer utility methods for converting between types, parsing strings, and more. Autoboxing and unboxing automatically convert between primitive types and their corresponding wrapper classes, simplifying their use in Java code.## Wrapper Classes
+
+## ArrayList
+
+The `ArrayList` class in Java is a resizable array implementation of the `List` interface. It provides dynamic arrays that can grow as needed, offering flexibility not available with standard arrays. `ArrayList` supports operations such as adding, removing, and searching for elements. It stores its elements as `Object` instances, allowing it to hold any type of objects, including instances of wrapper classes for primitive types. This makes `ArrayList` a versatile choice for storing collections of data where the size may vary dynamically during runtime.
+
+### 2D ArrayList
+
+searching for elements. It allows for the storage of elements of any type, including objects and instances of wrapper classes, making it highly versatile for various programming needs. Additionally, `ArrayList` offers methods to access and modify elements at specific indexes, check the size of the collection, and clear the collection, among others. Its ability to dynamically adjust its size makes it a popular choice for managing collections of data where the number of elements is not known in advance or may change over time.
