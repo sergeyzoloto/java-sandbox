@@ -116,3 +116,11 @@ In the context of programming, particularly in object-oriented languages like Ja
 ## final Keyword for creating immutable variables
 
 When applied to a variable, it must be initialized at the time of declaration or inside the constructor if it's an instance variable. For methods, marking them as `final` prevents them from being overridden in subclasses, ensuring consistent behavior across different implementations. Similarly, when a class is declared as `final`, it cannot be subclassed, making it a reliable choice for creating immutable and secure classes that maintain their integrity throughout the application lifecycle.
+
+## Objects, classes, instances
+
+In Java, the concepts of objects, classes, and instances are foundational to its object-oriented programming model. A **class** is a blueprint from which individual **objects** (instances) are created. The class defines the properties (attributes/fields) and behaviors (methods/functions) that its objects will have. An **instance** refers to a single realization of a class. When a new instance of a class is created, it is said that an object has been instantiated. This process involves allocating memory for the new object and initializing its state through constructors. Understanding these concepts is crucial for designing and implementing software in Java, as they enable the encapsulation of data and behavior, inheritance, and polymorphism, which are key principles of object-oriented programming.
+
+### Constructors
+
+In Java, constructors are special methods used to initialize new objects. They have the same name as the class and do not return a value, not even `void`. Constructors are called when an instance of a class is created, and they can take parameters to set initial values for the object's attributes. Java allows for the definition of multiple constructors in a class, each with different parameters, known as constructor overloading. This feature enables objects to be initialized in different ways, providing flexibility in how objects are created and set up.
