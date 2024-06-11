@@ -38,5 +38,7 @@ public class Loops {
         System.out.println("i = " + i + " j = " + j);
       }
     }
+
+    scanner.close();
   }
 }

@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Random;
 
 public class Conditional {
 
@@ -82,11 +83,16 @@ public class Conditional {
     // ! (logical NOT): Reverse the result, returns false if the result is true
     boolean isRaining = false;
 
+    Random random = new Random();
+    isRaining = random.nextBoolean();
+
     if (!isRaining) {
       System.out.println("You don't need to carry an umbrella");
     } else {
       System.out.println("You need to carry an umbrella");
     }
+
+    scanner.close();
 
   }
 
