@@ -108,3 +108,7 @@ The `ArrayList` class in Java is a resizable array implementation of the `List` 
 ### 2D ArrayList
 
 searching for elements. It allows for the storage of elements of any type, including objects and instances of wrapper classes, making it highly versatile for various programming needs. Additionally, `ArrayList` offers methods to access and modify elements at specific indexes, check the size of the collection, and clear the collection, among others. Its ability to dynamically adjust its size makes it a popular choice for managing collections of data where the number of elements is not known in advance or may change over time.
+
+## Methods
+
+In the context of programming, particularly in object-oriented languages like Java, methods are blocks of code designed to perform a specific task. A method is associated with an object or a class and can manipulate the **state** (data) of that object or class. Methods are defined within a class and are used to express the **behaviors** of objects. They can take parameters, perform operations or calculations, and return a value.
