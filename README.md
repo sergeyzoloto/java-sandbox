@@ -124,3 +124,15 @@ In Java, the concepts of objects, classes, and instances are foundational to its
 ### Constructors
 
 In Java, constructors are special methods used to initialize new objects. They have the same name as the class and do not return a value, not even `void`. Constructors are called when an instance of a class is created, and they can take parameters to set initial values for the object's attributes. Java allows for the definition of multiple constructors in a class, each with different parameters, known as constructor overloading. This feature enables objects to be initialized in different ways, providing flexibility in how objects are created and set up.
+
+### Local and global variables
+
+In Java, variables are categorized based on their scope as either local or global (more commonly referred to as instance variables or class variables). **Local variables** are defined within a method and can only be accessed within that method. They are created when the method is called and destroyed when the method exits. **Global variables**, on the other hand, are divided into **instance variables** and **class variables**. **Instance variables** are associated with an instance of a class; each object has its own copy of the instance variable. **Class variables** are marked with the `static` keyword and are shared among all instances of the class. Understanding the scope and lifetime of these variables is essential for managing data within your Java applications effectively.
+
+### Overloaded constructors
+
+In Java, overloaded constructors are multiple constructors within the same class, each having a different parameter list. This allows for creating objects in various states, depending on the information available at the time of instantiation. Overloading constructors enhance a class's flexibility and readability by providing multiple ways to initialize an object's state. It's a key aspect of Java's object-oriented capabilities, enabling developers to write more maintainable and scalable code by offering various initialization paths that suit different use cases.
+
+### toString methods overriding
+
+In Java, the `toString` method is a public method inherited from the `Object` class. It is intended to return a string representation of the object. Overriding this method in your class allows you to provide a more informative and readable string representation that is specific to the objects of your class. This is particularly useful for debugging purposes, as it enables you to quickly see the values of an object's fields without needing to write additional code to print each one. By customizing the `toString` method, developers can improve the usability and clarity of their classes when objects are printed or logged.

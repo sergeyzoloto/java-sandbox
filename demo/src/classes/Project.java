@@ -22,6 +22,14 @@ public class Project {
     human2.eat();
     human2.eat();
     human2.eat();
+
+    // toString() is a method that all objects inherit from the Object class
+    // that returns a string representation of the object
+
+    // Print car object
+    System.out.println(myCar);
+    System.out.println(myCar.toString());
+
   }
 
   
