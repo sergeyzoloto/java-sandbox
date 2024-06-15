@@ -144,3 +144,35 @@ In Java, an array of objects is a data structure that allows you to store multip
 ### Object passing
 
 In Java, when objects are passed to methods, what is actually passed is a reference to the object, not the object itself. This means that if you modify the object inside the method, the changes will be reflected in the original object outside the method. This behavior facilitates the manipulation of objects across different parts of a program without the need to copy or recreate objects.
+
+## static keyword
+
+The `static` keyword in Java is used to indicate that a particular field, method, or block belongs not to any instance of a class, but to the class itself. Static members are shared among all instances of a class, making them ideal for defining constants or utility functions that are common to all objects of that class. Additionally, static blocks can be used for static initialization of a class. This keyword plays a crucial role in memory management by reducing the amount of memory required for common data and methods shared by objects.
+
+## Inheritance
+
+This concept allows a class to inherit properties and methods from another class. The class that inherits is called the `subclass` or `child class`, while the class from which properties are inherited is known as the `superclass` or `parent class`. Inheritance promotes code reuse and establishes a hierarchical classification of classes, which is crucial for organizing complex software systems.
+
+### Method overriding
+
+Method overriding occurs in Java when a subclass provides a specific implementation for a method that is already defined in its superclass. This mechanism allows a subclass to tailor or modify the behavior of the superclass method according to its needs. Overriding ensures that the subclass can offer a more specific behavior for the inherited methods, enhancing the `polymorphism` feature of Java.
+
+### super keyword
+
+The `super` keyword in Java is used within a subclass to refer to its parent class. It can be used to call methods and constructors of the parent class that may be overridden or hidden in the subclass. The `super` keyword is instrumental in accessing and invoking the parent class's behaviors, ensuring that the subclass can leverage and extend the functionalities of its superclass.
+
+## Abstraction
+
+Abstraction in Java is a process of hiding the implementation details and showing only the functionality to the users. It can be achieved with abstract classes and interfaces. Abstract classes cannot be instantiated, but they can have abstract methods, which are methods without bodies. These methods must be implemented by subclasses. Abstraction helps in reducing complexity and allows the programmer to focus on interactions at a higher level.
+
+## Access modifiers
+
+Access modifiers in Java determine the accessibility or scope of a field, method, constructor, or class. There are four types of access modifiers: `private`, `protected`, `public`, and default (no modifier).
+`Private` members are accessible only within the same class,
+`protected` members within the same package or subclasses,
+and `public` members from any class.
+The default modifier means the member is accessible only within its own package. Access modifiers are fundamental for encapsulation in Java.
+
+## Encapsulation, getters and setters
+
+Encapsulation is one of the four fundamental OOP concepts. It is the technique of making the fields in a class private and providing access to the fields via public methods. It's a way to protect the data from unauthorized access and modification. Encapsulation in Java is achieved using access modifiers, ensuring that sensitive data is hidden from users and can be accessed only through designated methods.
