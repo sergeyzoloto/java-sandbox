@@ -136,3 +136,7 @@ In Java, overloaded constructors are multiple constructors within the same class
 ### toString methods overriding
 
 In Java, the `toString` method is a public method inherited from the `Object` class. It is intended to return a string representation of the object. Overriding this method in your class allows you to provide a more informative and readable string representation that is specific to the objects of your class. This is particularly useful for debugging purposes, as it enables you to quickly see the values of an object's fields without needing to write additional code to print each one. By customizing the `toString` method, developers can improve the usability and clarity of their classes when objects are printed or logged.
+
+## Array of Objects, collections
+
+In Java, an array of objects is a data structure that allows you to store multiple objects of the same type together. This can be particularly useful when you want to group related objects for easy access and manipulation. However, arrays have a fixed size once initialized, which limits their flexibility. To overcome this limitation, Java provides collections such as `ArrayList`, `HashSet`, and `HashMap`, among others. Collections are dynamic, meaning they can grow or shrink in size as needed, providing a more flexible way to handle groups of objects. They also offer a rich set of methods for performing operations like adding, removing, and searching elements, making them an essential tool for Java developers.
