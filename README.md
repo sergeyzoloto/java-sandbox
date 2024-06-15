@@ -140,3 +140,7 @@ In Java, the `toString` method is a public method inherited from the `Object` cl
 ## Array of Objects, collections
 
 In Java, an array of objects is a data structure that allows you to store multiple objects of the same type together. This can be particularly useful when you want to group related objects for easy access and manipulation. However, arrays have a fixed size once initialized, which limits their flexibility. To overcome this limitation, Java provides collections such as `ArrayList`, `HashSet`, and `HashMap`, among others. Collections are dynamic, meaning they can grow or shrink in size as needed, providing a more flexible way to handle groups of objects. They also offer a rich set of methods for performing operations like adding, removing, and searching elements, making them an essential tool for Java developers.
+
+### Object passing
+
+In Java, when objects are passed to methods, what is actually passed is a reference to the object, not the object itself. This means that if you modify the object inside the method, the changes will be reflected in the original object outside the method. This behavior facilitates the manipulation of objects across different parts of a program without the need to copy or recreate objects.
