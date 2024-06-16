@@ -155,7 +155,7 @@ This concept allows a class to inherit properties and methods from another class
 
 ### Method overriding
 
-Method overriding occurs in Java when a subclass provides a specific implementation for a method that is already defined in its superclass. This mechanism allows a subclass to tailor or modify the behavior of the superclass method according to its needs. Overriding ensures that the subclass can offer a more specific behavior for the inherited methods, enhancing the `polymorphism` feature of Java.
+Method overriding occurs in Java when a subclass provides a specific implementation for a method that is already defined in its superclass. This mechanism allows a subclass to modify the behavior of the superclass method according to its needs. Overriding ensures that the subclass can offer a more specific behavior for the inherited methods, enhancing the `polymorphism` feature of Java.
 
 ### super keyword
 
