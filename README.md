@@ -192,3 +192,19 @@ Polymorphism is the ability of an object to take on many forms. In Java, this me
 ## Dynamic polymorphism
 
 Dynamic polymorphism, also known as runtime polymorphism, is achieved in Java through method overriding. This occurs when a subclass has a method with the same name, return type, and parameters as a method in its superclass. At runtime, the Java Virtual Machine (JVM) determines which method to execute based on the object's runtime type, allowing for dynamic method dispatch.
+
+## Exception handling
+
+Exception handling in Java is a powerful mechanism that allows a program to deal with runtime errors in a graceful manner. It is achieved through the use of `try`, `catch`, and `finally` blocks. The try block contains the code that might throw an exception, while the catch block is used to handle the exception. The finally block contains code that is always executed, regardless of whether an exception was thrown or not. This ensures that necessary cleanup can be performed, such as closing file streams or releasing resources.
+
+## File class
+
+The File class in Java is part of the `java.io` package and represents a file or directory path in the system. It provides various methods to create, delete, inspect, and modify files and directories. For example, you can check if a file exists, read its permissions, or list the files in a directory. However, it does not allow for reading or writing the content of files; for that, other classes like FileReader or FileWriter are used.
+
+## Write to file
+
+Writing to a file in Java typically involves using classes such as `FileWriter`, BufferedWriter, or PrintWriter. These classes provide methods to write text to a file in an efficient and convenient way. For example, FileWriter is used to write character-oriented data to a file, while BufferedWriter provides buffering to ensure efficient writing. PrintWriter offers methods to print formatted representations of objects to a text-output stream, making it useful for writing text files.
+
+## File reader
+
+The `FileReader` class in Java is used to read data from files as streams of characters. It extends the InputStreamReader class and is designed for reading streams of characters from files. This class is often used in conjunction with BufferedReader to improve efficiency and performance by buffering the input. BufferedReader also provides a convenient method to read a line of text at a time, simplifying the process of reading text files line by line.
