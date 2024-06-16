@@ -1,3 +1,5 @@
+package static_keyword;
+
 public class Friend {
 
   String name;

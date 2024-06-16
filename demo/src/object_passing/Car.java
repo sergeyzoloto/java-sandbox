@@ -1,3 +1,5 @@
+package object_passing;
+
 public class Car {
   
   String name;

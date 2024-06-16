@@ -1,3 +1,5 @@
+package inheritance;
+
 public class Main {
   
   // inheritance = the process where one class acquires the attributes and methods of another

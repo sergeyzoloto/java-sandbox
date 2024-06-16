@@ -1,3 +1,5 @@
+package super_keyword;
+
 public class Hero extends Person{
 
   String power;
