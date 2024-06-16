@@ -176,3 +176,19 @@ The default modifier means the member is accessible only within its own package.
 ## Encapsulation, getters and setters
 
 Encapsulation is one of the four fundamental OOP concepts. It is the technique of making the fields in a class private and providing access to the fields via public methods. It's a way to protect the data from unauthorized access and modification. Encapsulation in Java is achieved using access modifiers, ensuring that sensitive data is hidden from users and can be accessed only through designated methods.
+
+## Copy objects
+
+Copying objects in Java can be achieved through several methods, including cloning (using the `clone()` method), copy constructors, and copying through serialization. Each method has its own use cases and considerations regarding deep and shallow copying.
+
+## Interface
+
+An interface in Java is a reference type, similar to a class, that can contain only constants, method signatures, default methods, static methods, and nested types. Interfaces cannot contain instance fields or constructor methods. They are used to specify a set of methods that a class must implement, providing a way to achieve abstraction and multiple inheritance in Java.
+
+## Polymorphism
+
+Polymorphism is the ability of an object to take on many forms. In Java, this means that a single interface can be used to represent different underlying forms of an object. This is one of the core concepts of OOP and allows for actions to be performed in different ways, based on the actual object that the action is being performed on. Polymorphism in Java is mainly divided into two types: compile-time (static) and runtime (dynamic) polymorphism.
+
+## Dynamic polymorphism
+
+Dynamic polymorphism, also known as runtime polymorphism, is achieved in Java through method overriding. This occurs when a subclass has a method with the same name, return type, and parameters as a method in its superclass. At runtime, the Java Virtual Machine (JVM) determines which method to execute based on the object's runtime type, allowing for dynamic method dispatch.
