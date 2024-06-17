@@ -81,3 +81,23 @@ A MenuBar is a graphical user interface component that displays a list of menus 
 ## JColorChooser
 
 `JColorChooser` is a GUI mechanism that allows a user to choose colors from a palette in a dialog window.
+
+## KeyListener
+
+`KeyListener` is an interface in Java that listens for keys pressed, released, or typed on a component. It is commonly used to handle keyboard events, allowing developers to define custom responses to various key actions within their applications.
+
+## MouseListener
+
+`MouseListener` is an interface in Java that receives mouse events. It can detect mouse clicks, presses, releases, enters, and exits on a component. This is useful for creating interactive GUIs where mouse behavior triggers specific actions.
+
+## Drag & Drop, Point
+
+Drag & Drop is a direct manipulation gesture found in many GUI systems, allowing users to drag an object and drop it onto another object or location. `Point` is a class in Java that represents a location in a coordinate space, which is often used in GUI programming to track mouse positions or to position components.
+
+## Key Bindings
+
+Key Bindings in Java Swing allow developers to bind specific actions to key strokes, providing a more flexible and efficient way of handling keyboard input. Unlike `KeyListener`, key bindings work even when a component doesn't have focus, making them ideal for defining global shortcuts in an application.
+
+## 2D Graphics
+
+Java provides the `Graphics2D` class, an extension of the `Graphics` class, offering more sophisticated control over geometry, coordinate transformations, color management, and text layout. This is the foundation for drawing shapes, text, and images in Java Swing or AWT applications, enabling the creation of rich, custom UI components.
