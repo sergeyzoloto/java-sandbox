@@ -101,3 +101,7 @@ Key Bindings in Java Swing allow developers to bind specific actions to key stro
 ## 2D Graphics
 
 Java provides the `Graphics2D` class, an extension of the `Graphics` class, offering more sophisticated control over geometry, coordinate transformations, color management, and text layout. This is the foundation for drawing shapes, text, and images in Java Swing or AWT applications, enabling the creation of rich, custom UI components.
+
+## 2D Animations
+
+2D animations in Java can be achieved by manipulating graphics over time, typically within a loop or using a timer to update the graphics context periodically. This involves changing the properties of shapes, such as size, position, or color, and then redrawing them. Java's `Timer` class can be used in Swing applications to create smooth animations by scheduling the repainting of components at regular intervals. This approach allows developers to create dynamic and interactive user interfaces with moving graphics and animations.
