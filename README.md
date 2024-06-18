@@ -252,3 +252,7 @@ Running the command prompt in Java can be achieved using the `Runtime.getRuntime
 ## Executable (.jar)
 
 Executable JAR files are Java archives that contain an application and its dependencies, along with an entry point specified in the manifest file, making it runnable as a standalone program. JAR files are platform-independent, allowing Java applications to be easily distributed and executed on any system with a Java Runtime Environment (JRE).
+
+`javac \*.java`
+
+This compiles all Java files in the directory, ensuring there are no compilation errors before packaging.
