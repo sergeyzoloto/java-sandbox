@@ -6,15 +6,21 @@ Java is a **statically typed language**. Meaning declaring variables in Java is 
 
 In order to do anything in Java, you must use **utilize classes**. Classes are reusable blocks of code that produce objects for real world examples such as a user signing up on your website. The fact that Java is so structured can greatly help find and identify bugs.
 
-Java applications and programs are run in a **JVM (Java Virtual Machine)**, which is known as a Java Virtual machine. This lends to the fact that Java is **platform independent** and it's so flexible.
+Java applications and programs are run in a **JVM (Java Virtual Machine)**. This lends to the fact that Java is **platform independent** and it's so flexible.
+
+![Java vs JavaScript](repo/java0.png)
 
 ## How Java works
 
 Java development starts with writing **source code** in `.java` files, which is then compiled by a **compiler** into **byte code**, a platform-independent representation stored in `.class` files. This byte code is executed by the **Java Virtual Machine (JVM)**, which interprets it into **object code** (machine code) that the computer's processor can execute. This process, from source code to machine execution, underpins Java's platform independence, allowing Java applications to run on any device with a JVM installed, embodying its write-once-run-anywhere capability.
 
+![code explained](repo/java1.png)
+
 ## JDK
 
-The **JDK (Java Development Kit)**, **JRE (Java Runtime Environment)**, and **JVM (Java Virtual Machine)** are three core components of the Java programming language
+The **JDK (Java Development Kit)**, **JRE (Java Runtime Environment)**, and **JVM (Java Virtual Machine)** are three core components of the Java programming language.
+
+![JDK](repo/jdk.png)
 
 - **JDK (Java Development Kit)**: The JDK is a software development environment used for developing Java applications and applets. It includes the JRE, an interpreter/loader (Java), a compiler (javac), an archiver (jar), a documentation generator (Javadoc) and other tools needed in Java development. Essentially, the JDK is everything you need to write, compile, and debug Java applications.
 
@@ -33,6 +39,8 @@ In Java, variables are categorized based on the data they store and their scope.
 - **Instance Variables (Non-static Fields)**: Declared without the `static` keyword, these variables are unique to each instance of a class. They represent the state of an object.
 
 - **Class Variables (Static Fields)**: Declared with the `static` keyword, these variables are shared among all instances of a class. They represent the state of the class.
+
+![variable types](repo/variables1.png)
 
 ### Primitive variables
 
@@ -54,6 +62,8 @@ In Java, primitive types are the most basic data types. They are not objects and
 
 - **char**: A single 16-bit Unicode character. It has a minimum value of '\u0000' (or 0) and a maximum value of '\uffff' (or 65,535 inclusive).
 
+![primitive types](repo/variables2.png)
+
 ### long and float primitive variables assignment
 
 When declaring `long` and `float` variables in Java, there are syntax peculiarities to be aware of:
@@ -69,6 +79,8 @@ When declaring `long` and `float` variables in Java, there are syntax peculiarit
 - **Assignment**. After a variable is declared, it can be assigned a value: `myNumber = 5;`.
 
 - **Initialization**. Combines declaration and assignment into a single step: `int myNumber = 5;`.
+
+![variables declaration](repo/declaration.png)
 
 ## Expressions, operands, operators
 
@@ -99,7 +111,9 @@ In Java, wrapper classes provide a way to use primitive data types (`int`, `char
 - `boolean` -> `Boolean`
 - and so on for `byte`, `short`, `long`, `float`
 
-Wrapper classes are useful for working with collections, such as `ArrayList`, which can only store objects. They also offer utility methods for converting between types, parsing strings, and more. Autoboxing and unboxing automatically convert between primitive types and their corresponding wrapper classes, simplifying their use in Java code.## Wrapper Classes
+Wrapper classes are useful for working with collections, such as `ArrayList`, which can only store objects. They also offer utility methods for converting between types, parsing strings, and more. Autoboxing and unboxing automatically convert between primitive types and their corresponding wrapper classes, simplifying their use in Java code.
+
+[Wrapper code](demo/src/Wrapper.java)
 
 ## ArrayList
 
@@ -109,15 +123,22 @@ The `ArrayList` class in Java is a resizable array implementation of the `List` 
 
 searching for elements. It allows for the storage of elements of any type, including objects and instances of wrapper classes, making it highly versatile for various programming needs. Additionally, `ArrayList` offers methods to access and modify elements at specific indexes, check the size of the collection, and clear the collection, among others. Its ability to dynamically adjust its size makes it a popular choice for managing collections of data where the number of elements is not known in advance or may change over time.
 
+[Arrays](demo/src/array_of_objects/Main.java)
+
 ## Methods
 
 In the context of programming, particularly in object-oriented languages like Java, methods are blocks of code designed to perform a specific task. A method is associated with an object or a class and can manipulate the **state** (data) of that object or class. Methods are defined within a class and are used to express the **behaviors** of objects. They can take parameters, perform operations or calculations, and return a value.
+
+[Methods](demo/src/Methods.java)
+[Method signature, overloaded methods](demo/src/MethodSignature.java)
 
 ## final Keyword for creating immutable variables
 
 When applied to a variable, it must be initialized at the time of declaration or inside the constructor if it's an instance variable. For methods, marking them as `final` prevents them from being overridden in subclasses, ensuring consistent behavior across different implementations. Similarly, when a class is declared as `final`, it cannot be subclassed, making it a reliable choice for creating immutable and secure classes that maintain their integrity throughout the application lifecycle.
 
 ## Objects, classes, instances
+
+[Code](demo/src/classes/)
 
 In Java, the concepts of objects, classes, and instances are foundational to its object-oriented programming model. A **class** is a blueprint from which individual **objects** (instances) are created. The class defines the properties (attributes/fields) and behaviors (methods/functions) that its objects will have. An **instance** refers to a single realization of a class. When a new instance of a class is created, it is said that an object has been instantiated. This process involves allocating memory for the new object and initializing its state through constructors. Understanding these concepts is crucial for designing and implementing software in Java, as they enable the encapsulation of data and behavior, inheritance, and polymorphism, which are key principles of object-oriented programming.
 
@@ -141,29 +162,43 @@ In Java, the `toString` method is a public method inherited from the `Object` cl
 
 In Java, an array of objects is a data structure that allows you to store multiple objects of the same type together. This can be particularly useful when you want to group related objects for easy access and manipulation. However, arrays have a fixed size once initialized, which limits their flexibility. To overcome this limitation, Java provides collections such as `ArrayList`, `HashSet`, and `HashMap`, among others. Collections are dynamic, meaning they can grow or shrink in size as needed, providing a more flexible way to handle groups of objects. They also offer a rich set of methods for performing operations like adding, removing, and searching elements, making them an essential tool for Java developers.
 
+[Code](demo/src/array_of_objects/)
+
 ### Object passing
 
 In Java, when objects are passed to methods, what is actually passed is a reference to the object, not the object itself. This means that if you modify the object inside the method, the changes will be reflected in the original object outside the method. This behavior facilitates the manipulation of objects across different parts of a program without the need to copy or recreate objects.
+
+[Code](demo/src/object_passing/)
 
 ## static keyword
 
 The `static` keyword in Java is used to indicate that a particular field, method, or block belongs not to any instance of a class, but to the class itself. Static members are shared among all instances of a class, making them ideal for defining constants or utility functions that are common to all objects of that class. Additionally, static blocks can be used for static initialization of a class. This keyword plays a crucial role in memory management by reducing the amount of memory required for common data and methods shared by objects.
 
+[Code](demo/src/static_keyword/)
+
 ## Inheritance
 
 This concept allows a class to inherit properties and methods from another class. The class that inherits is called the `subclass` or `child class`, while the class from which properties are inherited is known as the `superclass` or `parent class`. Inheritance promotes code reuse and establishes a hierarchical classification of classes, which is crucial for organizing complex software systems.
+
+[Code](demo/src/inheritance/)
 
 ### Method overriding
 
 Method overriding occurs in Java when a subclass provides a specific implementation for a method that is already defined in its superclass. This mechanism allows a subclass to modify the behavior of the superclass method according to its needs. Overriding ensures that the subclass can offer a more specific behavior for the inherited methods, enhancing the `polymorphism` feature of Java.
 
+[Code](demo/src/method_overriding/)
+
 ### super keyword
 
 The `super` keyword in Java is used within a subclass to refer to its parent class. It can be used to call methods and constructors of the parent class that may be overridden or hidden in the subclass. The `super` keyword is instrumental in accessing and invoking the parent class's behaviors, ensuring that the subclass can leverage and extend the functionalities of its superclass.
 
+[Code](demo/src/super_keyword/)
+
 ## Abstraction
 
 Abstraction in Java is a process of hiding the implementation details and showing only the functionality to the users. It can be achieved with abstract classes and interfaces. Abstract classes cannot be instantiated, but they can have abstract methods, which are methods without bodies. These methods must be implemented by subclasses. Abstraction helps in reducing complexity and allows the programmer to focus on interactions at a higher level.
+
+[Code](demo/src/abstraction/)
 
 ## Access modifiers
 
@@ -173,45 +208,67 @@ Access modifiers in Java determine the accessibility or scope of a field, method
 and `public` members from any class.
 The default modifier means the member is accessible only within its own package. Access modifiers are fundamental for encapsulation in Java.
 
+[Code](demo/src/access_modifiers/)
+
 ## Encapsulation, getters and setters
 
 Encapsulation is one of the four fundamental OOP concepts. It is the technique of making the fields in a class private and providing access to the fields via public methods. It's a way to protect the data from unauthorized access and modification. Encapsulation in Java is achieved using access modifiers, ensuring that sensitive data is hidden from users and can be accessed only through designated methods.
+
+[Code](demo/src/encapsulation/)
 
 ## Copy objects
 
 Copying objects in Java can be achieved through several methods, including cloning (using the `clone()` method), copy constructors, and copying through serialization. Each method has its own use cases and considerations regarding deep and shallow copying.
 
+[Code](demo/src/copy_objects/)
+
 ## Interface
 
 An interface in Java is a reference type, similar to a class, that can contain only constants, method signatures, default methods, static methods, and nested types. Interfaces cannot contain instance fields or constructor methods. They are used to specify a set of methods that a class must implement, providing a way to achieve abstraction and multiple inheritance in Java.
+
+[Code](demo/src/interfaces/)
 
 ## Polymorphism
 
 Polymorphism is the ability of an object to take on many forms. In Java, this means that a single interface can be used to represent different underlying forms of an object. This is one of the core concepts of OOP and allows for actions to be performed in different ways, based on the actual object that the action is being performed on. Polymorphism in Java is mainly divided into two types: compile-time (static) and runtime (dynamic) polymorphism.
 
+[Code](demo/src/polymorphism/)
+
 ## Dynamic polymorphism
 
 Dynamic polymorphism, also known as runtime polymorphism, is achieved in Java through method overriding. This occurs when a subclass has a method with the same name, return type, and parameters as a method in its superclass. At runtime, the Java Virtual Machine (JVM) determines which method to execute based on the object's runtime type, allowing for dynamic method dispatch.
+
+[Code](demo/src/dynamic_polymorphism/)
 
 ## Exception handling
 
 Exception handling in Java is a powerful mechanism that allows a program to deal with runtime errors in a graceful manner. It is achieved through the use of `try`, `catch`, and `finally` blocks. The try block contains the code that might throw an exception, while the catch block is used to handle the exception. The finally block contains code that is always executed, regardless of whether an exception was thrown or not. This ensures that necessary cleanup can be performed, such as closing file streams or releasing resources.
 
+[Code](demo/src/exception_handling/)
+
 ## File class
 
 The File class in Java is part of the `java.io` package and represents a file or directory path in the system. It provides various methods to create, delete, inspect, and modify files and directories. For example, you can check if a file exists, read its permissions, or list the files in a directory. However, it does not allow for reading or writing the content of files; for that, other classes like FileReader or FileWriter are used.
+
+[Code](demo/src/file_class/)
 
 ## Write to file
 
 Writing to a file in Java typically involves using classes such as `FileWriter`, BufferedWriter, or PrintWriter. These classes provide methods to write text to a file in an efficient and convenient way. For example, FileWriter is used to write character-oriented data to a file, while BufferedWriter provides buffering to ensure efficient writing. PrintWriter offers methods to print formatted representations of objects to a text-output stream, making it useful for writing text files.
 
+[Code](demo/src/write_to_file/)
+
 ## File reader
 
 The `FileReader` class in Java is used to read data from files as streams of characters. It extends the InputStreamReader class and is designed for reading streams of characters from files. This class is often used in conjunction with BufferedReader to improve efficiency and performance by buffering the input. BufferedReader also provides a convenient method to read a line of text at a time, simplifying the process of reading text files line by line.
 
+[Code](demo/src/read_file/)
+
 ## Generics
 
 Generics in Java enable types (classes and interfaces) to be parameters when defining classes, interfaces, and methods. This feature provides stronger type checks at compile time and eliminates the need for casting, making the code safer and easier to read. Generics also enable developers to implement generic algorithms that work on collections of different types, providing more reusability and abstraction.
+
+[Code](demo/src/generics/)
 
 ### HashMap
 
@@ -221,21 +278,31 @@ The `HashMap` in Java is a part of the Collections Framework. It stores items in
 
 Bounded types in Java Generics restrict the types that can be used as type arguments in a parameterized type. By specifying an upper bound, you can declare a type parameter to accept only values of a certain type or its subclasses, ensuring API flexibility while maintaining type safety. This is particularly useful in enforcing constraints on generic types at compile time.
 
+[Code](demo/src/bounded_types/)
+
 ## Serialization
 
 Serialization in Java is a mechanism of converting the state of an object into a byte stream, making it possible to save objects to a file or send them over a network. Conversely, deserialization is the process of converting the byte stream back into a copy of the object. This feature is crucial for persisting the state of an object or for transmitting objects between different parts of a system in a platform-independent manner.
+
+[Code](demo/src/serialization/)
 
 ## TimerTask
 
 `TimerTask` is a task that can be scheduled for one-time or repeated execution by a Timer. It is an abstract class that implements the Runnable interface, requiring the implementation of the `run` method where the task's code resides. TimerTasks are useful for scheduling tasks that need to be executed periodically or at a specific time, such as reminders or routine data updates.
 
+[Code](demo/src/Timer/Main.java)
+
 ## Threads
 
 Threads in Java are the smallest unit of execution within a process. Java provides the `Thread` class and the `Runnable` interface to create and manage threads, allowing multiple threads to run concurrently. This concurrency model enables the development of highly responsive and interactive applications by performing time-consuming operations in the background, improving application performance.
 
+[Code](demo/src/threads/)
+
 ## Multithreading, Runnable
 
 Multithreading refers to the concurrent execution of two or more threads within a program, allowing multiple operations to run simultaneously, improving the application's responsiveness and performance. The `Runnable` interface should be implemented by any class whose instances are intended to be executed by a thread, defining a single method `run`, where the action of the thread is specified.
+
+[Code](demo/src/multithreading/)
 
 ## Packages
 
@@ -256,3 +323,7 @@ Executable JAR files are Java archives that contain an application and its depen
 `javac \*.java`
 
 This compiles all Java files in the directory, ensuring there are no compilation errors before packaging.
+
+## GUI
+
+[README](demo/src/GUI/README.md)
